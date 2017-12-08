@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="weui.min.css">
+    <link rel="stylesheet" href="jquery-weui.min.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="jquery-2.1.4.js"></script>
+</head>
+<style>
+    *{margin:0;padding:0}
+    html{font-size: 62.5%;}
+    header{height:3.2rem;background: #00b600;color:white;text-align: center;font-size: 2rem;font-weight: bold;
+        line-height:3.2rem;position: fixed;top:0;width: 100%;z-index: 999}
+    .content-bottom{width:90%;margin:0 auto}
+    #tab1 .page__hd h1{margin-bottom:1rem;font-size: 2rem}
+    .swiper-slide img{width:100%}
+    #tab2 h1{font-size:2rem;margin-top:1rem}
+    #tab2 img{width:100%}
+    #tab3 .content{width:90%;margin:0 auto}
+    #tab3 h1{font-size:2rem;}
+    .w{padding-bottom: 10rem;}
+    .c{padding-top:3.2rem}
+    footer{position:fixed;bottom:0;width:100%;}
+
+
+   .swiper2{width:100%;}
+   .slide2 img{width:100%;}
+
+    .swiper3{height:20rem}
+    .swiper3 img{height:100%;}
+
+</style>
+<body ontouchstart>
+<div class="weui-tab">
+    <div class="weui-tab__bd ">
+        <div class="c"></div>
+        <header>
+            <p>豆瓣<p>
+        </header>
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+
+            <div class="content">
+                <div class="weui-search-bar" id="searchBar">
+                    <form class="weui-search-bar__form">
+                        <div class="weui-search-bar__box">
+                            <i class="weui-icon-search"></i>
+                            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required/>
+                            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                        </div>
+                        <label class="weui-search-bar__label" id="searchText">
+                            <i class="weui-icon-search"></i>
+                            <span>搜索</span>
+                        </label>
+                    </form>
+                    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+                </div>
+                <!--<div class="banner">
+                    <img src="images/index_09.jpg">
+                </div>-->
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1" ><img src="images/banner01.jpg"></div>
+                        <div class="swiper-slide slide1" ><img src="images/banner02.jpg"></div>
+                        <div class="swiper-slide slide1" ><img src="images/banner03.jpg"></div>
+                        <!--<div class="swiper-slide slide1" ><img src="images/index_09.jpg"></div>-->
+                    </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                    <!-- <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>-->
+
+                </div>
+                <div class="content-bottom">
+                    <div class="page__hd">
+                        <h1 class="page__title">我的关注</h1>
+
+                    </div>
+                    <div class="weui-grids">
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_12.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">电影</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_14.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">电视</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_16.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">图书</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_21.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">同城</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_22.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">小组</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_23.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">音乐</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_27.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">阅读</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_28.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">游戏</p>
+                        </a>
+                        <a href="javascript:;" class="weui-grid">
+                            <div class="weui-grid__icon">
+                                <img src="./images/index_29.jpg" alt="">
+                            </div>
+                            <p class="weui-grid__label">应用</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div id="tab2" class="weui-tab__bd-item ">
+  <!--  <div class="c"></div>
+
+            <header>
+                <p>豆瓣<p>
+            </header>-->
+            <!--//下拉刷新-->
+           <!-- <div class="content ">-->
+                <article class="weui-article">
+                    <div class="weui-pull-to-refresh__layer">
+                        <!--<div class='weui-pull-to-refresh__arrow'></div>-->
+                        <div class='weui-pull-to-refresh__preloader'></div>
+                        <!--<div class="down">下拉刷新</div>-->
+                        <div class="up">释放刷新</div>
+                        <div class="refresh">正在刷新</div>
+                    </div>
+                    <h1>逃避症患者生存指南</h1>
+                    <section >
+                        <h2 class="title">文/荞麦</h2>
+                        <section>
+                            <h3>1</h3>
+                            <div id="list" class='content-padded'>
+                            <p>去年年底的时候，面对公司即将到来的新一轮人事变动，我收拾行李去了美国。每次知道公司有什么变化
+                                ，总是想:"幸好我不在......"</p>
+                            <p>
+                                之后总部就有年长的朋友提醒我:"你怎么搞的啊。听说在领导面前讲你坏话的人很多。虽然不知道什么情况,
+                                ,事实上我跟大部分同事都不来往，莫名其妙却听说什么人又讲了什么。每次听到这样的消息，我都当做不知道，
+                                不存在。"
+                            </p>
+                            <p>
+                                <img src="images/yuedu_03.jpg">
+                            </p>
+                            <!--//图文混排    -->
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__hd">
+                                        <img class="weui-media-box__thumb" src="images/read.png">
+                                    </div>
+                                    <div class="weui-media-box__bd">
+                                        <h4 class="weui-media-box__title">标题一</h4>
+                                        <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                                    </div>
+                                </a>
+
+
+                                <div class="weui-panel weui-panel_access">
+
+                                    <div class="weui-panel__bd">
+                                        <div class="weui-media-box weui-media-box_text">
+                                            <h4 class="weui-media-box__title">标题一</h4>
+                                            <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                                        </div>
+                                        <div class="weui-media-box weui-media-box_text">
+                                            <h4 class="weui-media-box__title">标题二</h4>
+                                            <p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </section>
+                </article>
+
+
+        <div class="weui-loadmore">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+
+           <!-- </div>-->
+        </div>
+        <div id="tab3" class="weui-tab__bd-item">
+           <!-- <div class="c"></div>
+            <header>
+                <p>豆瓣<p>
+            </header>-->
+            <div class="content">
+                <div class="page__hd">
+                    <h1 class="page__title">影院热映</h1>
+                </div>
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper ">
+                        <div class=" swiper-slide slide2"><img src="images/atc01.jpg"></div>
+                        <div class=" swiper-slide slide2"><img src="images/atc02.jpg"></div>
+                        <div class=" swiper-slide slide2"><img src="images/atc03.jpg"></div>
+                        <div class=" swiper-slide slide2"><img src="images/atc04.jpg"></div>
+                        <div class=" swiper-slide slide2"><img src="images/atc05.jpg"></div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+
+                <div class="swiper-container swiper3">
+                    <div class="swiper-wrapper ">
+                        <div class=" swiper-slide slide3"><img src="images/atc01.jpg"></div>
+                        <div class=" swiper-slide slide3"><img src="images/atc02.jpg"></div>
+                        <div class=" swiper-slide slide3"><img src="images/atc03.jpg"></div>
+                        <div class=" swiper-slide slide3"><img src="images/atc04.jpg"></div>
+                        <div class=" swiper-slide slide3"><img src="images/atc05.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination3"></div>
+
+                </div>
+
+
+                <!--<div class="weui-flex">
+                    <div class="weui-flex__item"><img src="images/reying_03.jpg"><div class="placeholder">速度与激情7</div></div>
+                    <div class="weui-flex__item"><img src="images/reying_05.jpg"><div class="placeholder">蓝精灵</div></div>
+                &lt;!&ndash;    <div class="weui-flex__item"><img src="images/reying_07.jpg"><div class="placeholder">傲慢与偏见</div></div>
+                    <div class="weui-flex__item"><img src="images/reying_07.jpg"><div class="placeholder">傲慢与偏见</div></div>
+                    <div class="weui-flex__item"><img src="images/reying_07.jpg"><div class="placeholder">傲慢与偏见</div></div>
+                    <div class="weui-flex__item"><img src="images/reying_07.jpg"><div class="placeholder">傲慢与偏见</div></div>&ndash;&gt;
+                </div>-->
+
+                <div class="weui-loadmore">
+                    <i class="weui-loading"></i>
+                    <span class="weui-loadmore__tips">正在加载</span>
+                </div>
+
+            </div>
+        </div>
+        <div id="tab4" class="weui-tab__bd-item">
+            <!--<div class="c"></div>
+            <header>
+                <p>豆瓣<p>
+            </header>-->
+            <div class="weui-msg">
+                <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+                <div class="weui-msg__text-area">
+                    <h2 class="weui-msg__title">您还没有登录哦</h2>
+                    <p class="weui-msg__desc">未登录是无法查看的哦，已有账号赶快去登录，没有账号请先注册后再登录哦</p>
+                </div>
+                <div class="weui-msg__opr-area">
+                    <p class="weui-btn-area ">
+                        <a href="javascript:history.back();" id="show-login" class="weui-btn weui-btn_primary">立即登录</a>
+                        <a href="javascript:history.back();" class="weui-btn weui-btn_default">立即注册</a>
+                        <a href="javascript:history.back();" id="show-success" class=" weui-btn weui-btn_default">显示成功</a>
+                        <a href="javascript:history.back();" id="show-loading" class="weui-btn weui-btn_default">显示toast</a>
+                        <a href="javascript:history.back();" id="show-actions" class="weui-btn weui-btn_default">显示ActionSheet</a>
+                        <a href="javascript:history.back();" id="pb2" class="weui-btn weui-btn_default">photoBrowser</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="tab5" class="weui-tab__bd-item">
+           <!-- <div class="c"></div>
+            <header>
+                <p>豆瓣<p>
+            </header>-->
+            <div class="content1">
+            <div class="weui-cells weui-cells_form">
+
+            </div>
+
+            <div >
+                <h2 >内联日历</h2>
+            </div>
+
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label for="date3" class="weui-label">日期</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" id="date3" type="text">
+                    </div>
+                </div>
+            </div>
+            <div id="inline-calendar"></div>
+                </div>
+        </div>
+    <div class="w"></div>
+    <!--footer页面-->
+    <footer>
+        <div class="page__bd" style="height: 100%;">
+            <div class="weui-tab">
+                <div class="weui-tab__panel">
+                </div>
+                <div class="weui-tabbar">
+                    <a href="#tab1" class="weui-tabbar__item weui-bar__item_on">
+                        <img src="./images/index_34.jpg" alt="" class="weui-tabbar__icon">
+                        <p class="weui-tabbar__label">首页</p>
+                    </a>
+                    <a href="#tab2" class="weui-tabbar__item">
+                        <img src="./images/index_36.jpg" alt="" class="weui-tabbar__icon">
+                        <p class="weui-tabbar__label">阅读</p>
+                    </a>
+                    <a href="#tab3" class="weui-tabbar__item">
+                        <img src="./images/index_39.jpg" alt="" class="weui-tabbar__icon">
+                        <p class="weui-tabbar__label">电影</p>
+                    </a>
+                    <a href="#tab4" class="weui-tabbar__item">
+                <span style="display: inline-block;position: relative;">
+                    <img src="./images/index_41.jpg" alt="" class="weui-tabbar__icon">
+                    <span class="weui-badge" style="position: absolute;top: -2px;right: -6px;">8</span>
+                </span>
+                        <p class="weui-tabbar__label">我的</p>
+                    </a>
+                    <a href="#tab5" class="weui-tabbar__item">
+                        <img src="./images/index_39.jpg" alt="" class="weui-tabbar__icon">
+                        <p class="weui-tabbar__label">日历</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="jquery-weui.min.js"></script>
+<script src="swiper.js"></script>
+
+
+<script>
+
+    /*$(function() {
+        FastClick.attach(document.body);
+    });*/
+    var swiper=new Swiper(".swiper1",{
+
+        pagination:".swiper-pagination1"
+
+        /*grabCursor:true,*/
+        /* paginationClickable:true,*/
+        /* nextButton:".swiper-button-next",
+         prevButton:".swiper-button-prev"
+         */
+    })
+    $("#tab2 article").pullToRefresh();
+
+    $("#tab2 article").on("pull-to-refresh", function() {
+        setTimeout(function() {
+            $("#tab2 article ").pullToRefreshDone();
+        }, 2000);
+    });
+
+
+  /* 滚动加载内容*/
+
+    var loading = false;
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        setTimeout(function() {
+            $("#tab2 #list").append("<p>《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》" +
+                    "英文版有1100多页，教学内容非常丰富，不但涵盖了人工智能基础、问题求解、" +
+                    "知识推理与规划等经典内容，而且还包括不确定知识与推理、机器学习、" +
+                    "通讯感知与行动等专门知识的介绍。目前我们为本科生开设的学科基础必修课" +
+                    "“人工智能导论”主要介绍其中的经典内容，而研究生必修的核心课程“人工智能原理”" +
+                    "主要关注其中的专门知识。其实《世界著名计算机教材精选·人工智能:一种现代的方法(第3版)》" +
+                    "也适合希望提高自身计算系统设计水平的广大应用计算技术的社会公众，" +
+                    "对参加信息学奥林匹克竞赛和ACM程序设计竞赛的选手及其教练员也有一定的参考作用。</p>" +
+                    /*"<div class='weui-media-box weui-media-box_small-appmsg'>"+"<div class='weui-cells'>"
+                    +*/"<a class='weui-cell weui-cell_access' href='javascript:;'>" +
+                    "<div class='weui-cell__hd'><img src='images/read.png' style='width:20px;margin-right:5px;display:block'></div>"+
+                    "<div class='weui-cell__bd weui-cell_primary'><p>文字标题</p> </div></a>"
+
+
+
+            );
+            loading = false;
+        }, 2000);
+    });
+
+    /*//按钮,顶部显示成功*/
+
+    $(document)
+            .on('click', '#show-success', function() {
+                $.toptip('操作成功', 'success');
+            })
+
+/*toast显示等待*/
+    $(document)
+            .on("click", "#show-loading", function() {
+                $.showLoading();
+
+                setTimeout(function() {
+                    $.hideLoading();
+                }, 3000)
+            });
+
+    /*//显示ActionSheet*/
+    $(document).on("click", "#show-actions", function() {
+        $.actions({
+            title: "选择操作",
+            /*onClose: function() {
+                console.log("close");
+            },*/
+            actions: [
+                {
+                    text: "发布",
+                    className: "color-primary",
+                    onClick: function() {
+                        $.alert("发布成功");
+                    }
+                },
+                {
+                    text: "编辑",
+                    className: "color-warning",
+                    onClick: function() {
+                        $.alert("你选择了“编辑”");
+                    }
+                },
+                {
+                    text: "删除",
+                    className: 'color-danger',
+                    onClick: function() {
+                        $.alert("你选择了“删除”");
+                    }
+                }
+            ]
+        });
+    });
+
+
+    var pb2 = $.photoBrowser({
+        items: [
+            {
+                image: "./images/atc01.jpg",
+                caption: "尝试 Vue.js 最简单的方法是使用 JSFiddle Hello World 例子。在浏览器新标签页中打开它，跟着我们查看一些基础示例。如果你喜欢用包管理器下载/安装，查看安装教程。"
+            },
+            {
+                image: "./images/atc02.jpg",
+                caption: "组件（Component）是 Vue.js 最强大的功能之一。"
+            },
+            {
+                image: "./images/atc03.jpg",
+                caption: "组件可以扩展 HTML 元素，封装可重用的代码"
+            },
+            {
+                image: "./images/atc04.jpg",
+                caption: "在较高层面上，组件是自定义元素，Vue.js 的编译器为它添加特殊功能。在有些情况下，组件也可以是原生 HTML 元素的形式，以 is 特性扩展。"
+            }
+        ],
+        initIndex: 2
+    });//必须引入的是swiper.js,引入swiper.min.js不行
+    $("#pb2").click(function() {
+        pb2.open();
+    });
+
+//show-login
+
+    $(document).on('click', '#show-login', function() {
+        $.login({
+            title: '登录',
+            text: '请输入用户名和密码',
+            onOK: function (username, password) {
+                console.log(username, password);
+                $.toast('登录成功!');
+            },
+            onCancel: function () {
+                $.toast('取消登录!', 'cancel');
+            }
+        });
+    });
+
+    var swiper2 = new Swiper('.swiper2', {
+        pagination: '.swiper-pagination2',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+
+    var swiper3=new Swiper(".swiper3",{
+        pagination:'.swiper-pagination3',
+        effect:"cube",
+        grabCursor:true,
+        cube:{
+            shadow:true,
+            slideShadow:true,
+            shadowOffset:20,
+            shadowScale:0.94
+        }
+    })
+
+</script>
+<script>
+    $("#date").calendar({
+        onChange: function (p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    $("#date2").calendar({
+        value: ['2016-12-12'],
+        dateFormat: 'yyyy年mm月dd日'  // 自定义格式的时候，不能通过 input 的value属性赋值 '2016年12月12日' 来定义初始值，这样会导致无法解析初始值而报错。只能通过js中设置 value 的形式来赋值，并且需要按标准形式赋值（yyyy-mm-dd 或者时间戳)
+    });
+    $("#date-multiple").calendar({
+        multiple: true,
+        onChange: function (p, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+    $("#date3").calendar({
+        container: "#inline-calendar"
+    });
+</script>
